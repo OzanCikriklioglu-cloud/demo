@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <title>Movie Details</title>
+</head>
+<body>
+<h1 th:text="${movie.title}"></h1>
+<p>Year: <span th:text="${movie.year}"></span></p>
+<p>Genre: <span th:text="${movie.genre}"></span></p>
+<p>Director: <span th:text="${movie.director}"></span></p>
+<p>Runtime: <span th:text="${movie.runtime}"></span> minutes</p>
+<p>Country: <span th:text="${movie.country}"></span></p>
+<a href="/movies">Back to List</a>
+</body>
+</html>
